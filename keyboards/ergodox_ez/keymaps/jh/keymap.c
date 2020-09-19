@@ -69,9 +69,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     OSM(MOD_RSFT),  LT(1,KC_Z),     LT(2,KC_X),     KC_C,           KC_V,           LT(3,KC_B),     KC_GRAVE,                                       KC_BSLASH,      LT(5,KC_N),     KC_M,           KC_COMMA,       LT(9,KC_DOT),   LT(8,KC_SLASH),    OSM(MOD_RSFT),
  // OSM(MOD_RSFT),  LCTL_T(KC_Z),   LALT_T(KC_X),   LGUI_T(KC_C),   LSFT_T(KC_V),   LT(3,KC_B),     KC_GRAVE,                                       KC_BSLASH,      LT(5,KC_N),     RSFT_T(KC_M),   RGUI_T(KC_COMMA),LALT_T(KC_DOT), RCTL_T(KC_SLASH), OSM(MOD_RSFT),
     OSM(MOD_LGUI),  OSM(MOD_LCTL),  OSM(MOD_LALT),  OSL(5),         OSL(4),                                                                                                         KC_LANG1,       OSL(7),         KC_LBRACKET,    KC_RBRACKET,       OSM(MOD_LGUI),
-                                                                                                    KC_TAB,         KC_LGUI,        KC_LEFT,        KC_RIGHT,
-                                                                                                                    OSM(MOD_LALT),  KC_UP,
-                                                                                    LSFT_T(KC_SPACE),KC_DELETE,     OSM(MOD_LCTL),  KC_DOWN,        KC_F14,         KC_ENTER
+                                                                                                    KC_HOME,        KC_END,         KC_LEFT,        KC_RIGHT,
+                                                                                                                    KC_PGUP,        KC_UP,
+                                                                                    LSFT_T(KC_SPACE),KC_DELETE,     KC_PGDOWN,      KC_DOWN,        KC_F14,         KC_ENTER
   ),
   // paren and easy symbols for programming
   [1] = LAYOUT_ergodox_pretty(
