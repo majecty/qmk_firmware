@@ -65,9 +65,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // default layout
   [0] = LAYOUT_ergodox_pretty(
     KC_EQUAL,       KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_6,                                           LCAG_T(KC_5),   KC_6,           KC_7,           KC_8,           KC_9,           KC_0,              KC_MINUS,
-    KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           LCTL(KC_LALT),                                  KC_LEAD,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,              LT(8,KC_BSLASH),
+    KC_TAB,         KC_Q,           KC_W,           LT(1,KC_E),     KC_R,           KC_T,           LCTL(KC_LALT),                                  KC_LEAD,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,              LT(8,KC_BSLASH),
     LGUI_T(KC_BSPC),LCTL_T(KC_A),   LALT_T(KC_S),   LT(1,KC_D),     LT(2,KC_F),     KC_G,                                                                           KC_H,           LT(8,KC_J),     LT(9,KC_K),     LALT_T(KC_L),   LCTL_T(KC_SCOLON), LGUI_T(KC_QUOTE),
-    OSM(MOD_RSFT),  KC_Z,           KC_X,           KC_C,           KC_V,           LT(3,KC_B),     KC_GRAVE,                                       KC_BSLASH,      LT(5,KC_N),     KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,          OSM(MOD_RSFT),
+    OSM(MOD_RSFT),  KC_Z,           KC_X,           LT(1,KC_C),     KC_V,           LT(3,KC_B),     KC_GRAVE,                                       KC_BSLASH,      LT(5,KC_N),     KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,          OSM(MOD_RSFT),
     OSM(MOD_LGUI),  OSM(MOD_LCTL),  OSM(MOD_LALT),  OSL(5),         OSL(4),                                                                                                         KC_LANG1,       OSL(7),         KC_LBRACKET,    KC_RBRACKET,       OSM(MOD_LGUI),
                                                                                                     KC_HOME,        KC_END,         KC_LEFT,        KC_RIGHT,
                                                                                                                     KC_PGUP,        KC_UP,
