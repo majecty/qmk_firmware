@@ -377,6 +377,9 @@ void matrix_scan_user(void) {
     SEQ_TWO_KEYS(KC_S, KC_T) {
       SEND_STRING(SS_LCTL(SS_LALT(SS_LGUI(SS_TAP(X_S)))));
     }
+    SEQ_ONE_KEY(KC_M) {
+      SEND_STRING(SS_LCTL(SS_LALT(SS_LGUI(SS_TAP(X_M)))));
+    }
     SEQ_ONE_KEY(KC_D) {
       SEND_STRING(SS_LCTL(SS_LALT(SS_LGUI(SS_TAP(X_D)))));
     }
