@@ -7,3 +7,5 @@
 #define TAPPING_TERM 186
 
 #define FIRMWARE_VERSION u8"zbVpd/aqxzD"
+#define LEADER_PER_KEY_TIMING
+#define LEADER_TIMEOUT 250
