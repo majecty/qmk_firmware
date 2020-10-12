@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     OSM(MOD_LGUI),  OSM(MOD_LCTL),  OSM(MOD_LALT),  OSL(5),         OSL(4),                                                                                                         KC_LANG1,       OSL(7),         KC_LBRACKET,    KC_RBRACKET,       OSM(MOD_LGUI),
                                                                                                     KC_HOME,        KC_END,         KC_LEFT,        KC_RIGHT,
                                                                                                                     KC_PGUP,        KC_UP,
-                                                                                    LSFT_T(KC_SPC), LT(2,KC_DEL),  KC_PGDOWN,      KC_DOWN,        KC_F14,         LT(1,KC_ENTER)
+                                                                                    LSFT_T(KC_SPC), LT(2,KC_DEL),  KC_PGDOWN,      KC_DOWN,        KC_F14,         LSFT_T(KC_ENTER)
   ),
   // easy layer switch
   [1] = LAYOUT_ergodox_pretty(
