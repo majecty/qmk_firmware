@@ -1,0 +1,15 @@
+COMB(erTab, KC_TAB,        KC_E, KC_R)
+SUBS(cvTAB, SS_DOWN(X_LSFT) SS_TAP(X_TAB) SS_UP(X_LSFT), KC_C, KC_V)
+
+SUBS(helloWorld, "QMK is pretty rad eh?", KC_H, KC_J)
+
+COMB(weEsc,      KC_ESC,          KC_W, KC_E)
+COMB(sdBspc,     KC_BSPC,         KC_S, KC_D)
+COMB(dfTab,       KC_TAB,          KC_D, KC_F)
+COMB(uiEsc,       KC_ESC,          KC_U, KC_I)
+COMB(jkCol,       KC_COLN,         KC_J, KC_K)
+COMB(hnEnt,      KC_ENT,          KC_H, KC_N)
+SUBS(pasta,       "I'd just like to interject for a moment.",       KC_H, KC_J, KC_K, KC_L)
+
+
+

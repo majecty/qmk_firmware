@@ -8,3 +8,7 @@ ORYX_ENABLE = yes
 ORYX_CONFIGURATOR = yes
 DYNAMIC_MACRO_ENABLE = yes
 LEADER_ENABLE = yes
+
+VPATH  +=  keyboards/gboards/
+# SRC                 +=  g/engine.c
+COMBO_ENABLE=yes

@@ -13,5 +13,8 @@
 #define LEADER_PER_KEY_TIMING
 #define LEADER_TIMEOUT 250
 
+#define COMBO_VARIABLE_LEN
+#define COMBO_TERM 50
+
 #endif // keyboards/ergodox_ez/keymaps/majecty/config_h_INCLUDED
 
