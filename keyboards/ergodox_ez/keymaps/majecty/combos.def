@@ -31,6 +31,9 @@ SUBS(aset_ao, SS_LSFT(SS_TAP(X_9)),        KC_A, KC_O)
 SUBS(aset_sp, SS_LSFT(SS_TAP(X_0)),         KC_S, KC_P)
 SUBS(aset_ip, SS_LSFT(SS_TAP(X_1)),         KC_I, KC_P)
 
+COMB(aset_esc,  KC_ESC,                     KC_A, KC_S, KC_E, KC_P)
+COMB(aset_tab,  KC_TAB,                     KC_A, KC_S, KC_E, KC_O)
+SUBS(aset_stab,  SS_LSFT(SS_TAP(X_TAB)),     KC_A, KC_S, KC_E, KC_O, KC_P)
 
 SUBS(helloWorld, "QMK is pretty rad eh?", KC_H, KC_J)
 
