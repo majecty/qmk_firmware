@@ -1,4 +1,17 @@
 #include QMK_KEYBOARD_H
+
+#define AAA KC_LCTL
+#define AAS KC_LSFT
+#define AAE KC_LALT
+#define AAT KC_LGUI
+#define AAN KC_LEFT
+#define AAI KC_DOWN
+#define AAO KC_UP
+#define AAP KC_RIGHT
+
+// #include "g/config_default.h"
+// #include "g/engine.h"
+// #include "g/keymap_engine.h"
 #include "g/keymap_combo.h"
 #include "version.h"
 
@@ -15,6 +28,7 @@ enum layers {
     FUNCTION,
     MOUSE,
     WINDOW,
+    ASETNIOP,
 };
 
 enum custom_keycodes {
@@ -46,6 +60,7 @@ enum custom_keycodes {
   ST_WINX,
   // auto close double backquote
   ST_AC_DBL_BQ,
+  ST_HASET,
 };
 
 /*
@@ -113,12 +128,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_ergodox_pretty(
   KC_EQUAL,      KC_1,         KC_2,         KC_3,      KC_4,      KC_5,         KC_6,                          LCAG_T(KC_5),KC_6,          KC_7,      KC_8,      KC_9,        KC_0,            KC_MINUS,
   KC_TAB,        KC_Q,         KC_W,         KC_E,      KC_R,      KC_T,         LCTL(KC_LALT),                 KC_LEAD,     KC_Y,          KC_U,      LT(9,KC_I),KC_O,        KC_P,            LT(8,KC_BSLASH),
-  GUI_T(KC_BSPC),CTL_T(KC_A),  LALT_T(KC_S), LT(1,KC_D),LT(2,KC_F),KC_G,                                                     KC_H,          LT(8,KC_J),LT(9,KC_K),LALT_T(KC_L),CTL_T(KC_SCOLON),GUI_T(KC_QUOTE),
+  TG(ASETNIOP),  CTL_T(KC_A),  LALT_T(KC_S), LT(1,KC_D),LT(2,KC_F),KC_G,                                                     KC_H,          LT(8,KC_J),LT(9,KC_K),LALT_T(KC_L),CTL_T(KC_SCOLON),GUI_T(KC_QUOTE),
   OSM(MOD_RSFT), CTL_T(KC_Z),  KC_X,         KC_C,      KC_V,      LT(3,KC_B),   KC_GRAVE,                      KC_BSLASH,   LT(5,KC_N),    KC_M,      KC_COMMA,  KC_DOT,      KC_SLASH,        OSM(MOD_RSFT),
   OSM(MOD_LGUI), OSM(MOD_LCTL),OSM(MOD_LALT),OSL(5),    OSL(4),                                                                             KC_LANG1,  OSL(7),    KC_LBRACKET, KC_RBRACKET,     OSM(MOD_LGUI),
                                                                                  KC_HOME,     KC_END,   KC_LEFT,KC_RIGHT,
                                                                                               KC_PGUP,  KC_UP,
-                                                                   SFT_T(KC_SPC),LT(2,KC_DEL),KC_PGDOWN,KC_DOWN,KC_F14,      SFT_T(KC_ENTER)
+                                                                   SFT_T(KC_SPC),GUI_T(KC_DEL),KC_PGDOWN,KC_DOWN,KC_F14,      SFT_T(KC_ENTER)
 ),
 [SYMB] = LAYOUT_ergodox_pretty(
   _______, _______,   _______, _______, _______,     _______, _______,                   _______, _______, _______, _______,  _______,  _______,   RESET,
@@ -213,14 +228,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // web browsing
 [WINDOW] = LAYOUT_ergodox_pretty(
-  _______, _______, _______, _______, _______, _______, _______,                                 _______, _______, _______, _______, _______,     _______,      _______,
-  _______, _______, _______, _______, _______, _______, _______,                                 _______, ST_WINX, KC_LCTL, _______, LSFT(KC_ESC),LSFT(KC_TAB), _______,
-  _______, _______, _______, _______, _______, _______,                                                   ST_TABX, KC_LALT, _______, KC_ESC,      KC_TAB,       _______,
-  _______, _______, _______, _______, _______, _______, _______,                                 _______, _______, KC_LCTL, _______, _______,     KC_ESCAPE,    _______,
-  _______, _______, _______, _______, _______,                                                                     _______, _______, _______,     _______,      _______,
+  _______, _______, _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______,     _______,      _______,
+  _______, _______, _______, _______, _______, _______, _______,                   _______, ST_WINX, KC_LCTL, _______, LSFT(KC_ESC),LSFT(KC_TAB), _______,
+  _______, _______, _______, _______, _______, _______,                                     ST_TABX, KC_LALT, _______, KC_ESC,      KC_TAB,       _______,
+  _______, _______, _______, _______, _______, _______, _______,                   _______, _______, KC_LCTL, _______, _______,     KC_ESCAPE,    _______,
+  _______, _______, _______, _______, _______,                                                       _______, _______, _______,     _______,      _______,
                                                         _______, _______, _______, _______,
                                                                  _______, _______,
                                         LALT(KC_LEFT),  _______, _______, _______, _______, LALT(KC_RIGHT)
+),
+
+[ASETNIOP] = LAYOUT_ergodox_pretty(
+  // left hand
+  _______, _______,_______,_______,_______,_______,_______,                  _______, _______, _______, _______, _______, _______, _______,
+  _______, _______,_______,_______,_______,_______,_______,                  _______, _______, _______, _______, _______, _______, _______,
+  _______, KC_A,   KC_S,   KC_E,   KC_T,   ST_HASET,                                  _______,    KC_N,    KC_I,    KC_O,    KC_P, _______,
+  _______, KC_LCTL,KC_LSFT,KC_LALT,KC_LGUI,_______,_______,                  _______, _______, KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, _______,
+  _______, _______,_______,_______,_______,                                                    _______, _______, _______, _______, _______,
+                                                   _______, _______, _______, _______,
+                                                            _______, _______,
+                                          _______, _______, _______, _______, _______,_______
 ),
 };
 
@@ -360,6 +387,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
           SEND_STRING(SS_LALT(SS_TAP(X_F4)));
 
+        }
+        return false;
+      case ST_HASET:
+        if (record->event.pressed) {
+          SEND_STRING("asetniop");
         }
         return false;
     }
