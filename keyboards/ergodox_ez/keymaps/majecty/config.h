@@ -16,9 +16,11 @@
 #define COMBO_VARIABLE_LEN
 #define COMBO_TERM 20
 
-#define MOUSEKEY_WHEEL_INTERVAL 50
+// #undef MK_COMBINED
+// #define MK_COMBINED
+#define MOUSEKEY_WHEEL_INTERVAL 30
 #define MOUSEKEY_WHEEL_MAX_SPEED 80
-// #define MOUSEKEY_WHEEL_TIME_TO_MAX 10
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 10
 
 #endif // keyboards/ergodox_ez/keymaps/majecty/config_h_INCLUDED
 
