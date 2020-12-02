@@ -12,9 +12,9 @@ COMB(jmKor,       KC_LANG1,         KC_J, KC_M)
 COMB(rtBQuote,    KC_GRV,           KC_R, KC_T)
 
 COMB(jsLScr,      KC_WH_L,          KC_J, KC_S)
-COMB(jfRScr,      KC_WH_R,          KC_J, KC_F)
-COMB(jdUScr,      KC_WH_U,          KC_J, KC_E)
-COMB(jeDScr,      KC_WH_D,          KC_J, KC_D)
+COMB(jdDScr,      KC_WH_D,          KC_J, KC_D)
+COMB(jfRScr,      KC_WH_U,          KC_J, KC_F)
+COMB(jgUScr,      KC_WH_R,          KC_J, KC_G)
 
 COMB(ksHome,      KC_HOME,          KC_K, KC_S)
 COMB(kdPGDown,    KC_PGDN,          KC_K, KC_D)
