@@ -133,11 +133,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                    SFT_T(KC_SPC),GUI_T(KC_DEL),KC_PGDOWN,KC_DOWN,KC_F14,      SFT_T(KC_ENTER)
 ),
 [SYMB] = LAYOUT_ergodox_pretty(
-  _______, _______,   _______, _______, _______,  _______,      _______,                   _______, _______, _______, _______,  _______,  _______,   RESET,
-  _______, KC_LCBR,   KC_RCBR, _______, KC_TAB,   LSFT(KC_TAB), _______,                   _______, _______, KC_EXLM, KC_AT,   KC_QUOTE, KC_PIPE, _______,
-  _______, KC_LPRN,   KC_RPRN, _______, KC_ESC,   LSFT(KC_ESC),                                     KC_AMPR, KC_HASH, KC_DLR,  KC_DQUO,  KC_BSLS, _______,
-  _______, KC_LBRC,   KC_RBRC, _______, KC_COLN,  _______,      _______,                   _______, KC_ASTR, KC_PERC, KC_CIRC, KC_PLUS,  KC_EQUAL,_______,
-  _______, _______,   _______, _______, _______,                                                        _______, _______,  _______, _______, _______,
+  _______, _______,   _______, _______, _______,  _______,      _______,                   _______, _______,  _______, _______,  _______,  _______,  RESET,
+  _______, KC_LCBR,   KC_RCBR, _______, KC_TAB,   LSFT(KC_TAB), _______,                   _______, ST_DBL_BQ,KC_EXLM, KC_AT,   KC_QUOTE, KC_PIPE, _______,
+  _______, KC_LPRN,   KC_RPRN, _______, KC_ESC,   LSFT(KC_ESC),                                     KC_AMPR,  KC_HASH, KC_DLR,  KC_DQUO,  KC_BSLS, _______,
+  _______, KC_LBRC,   KC_RBRC, _______, KC_COLN,  _______,      _______,                   _______, KC_ASTR,  KC_PERC, KC_CIRC, KC_PLUS,  KC_EQUAL,_______,
+  _______, _______,   _______, _______, _______,                                                              _______, _______,  _______, _______, _______,
                                                                 _______, _______, _______, _______,
                                                                          _______, _______,
                                                        KC_GRAVE,KC_TILD, _______, _______, KC_UNDS, KC_MINS
