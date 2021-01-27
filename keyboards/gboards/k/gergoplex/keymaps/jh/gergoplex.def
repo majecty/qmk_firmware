@@ -11,7 +11,7 @@ COMB(fvClic,      KC_BTN2,          KC_F, KC_V)
 COMB(jmKor,       KC_LANG1,         KC_J, KC_M)
 COMB(rtBQuote,    KC_GRV,           KC_R, KC_T)
 SUBS(rgBQuote,    "``",           KC_R, KC_G)
-COMB(vbDelete,    KC_DELETE,        KC_C, KC_B)
+COMB(vbDelete,    KC_DELETE,        KC_V, KC_B)
 
 COMB(jsLScr,      KC_WH_L,          KC_J, KC_S)
 COMB(jdDScr,      KC_WH_D,          KC_J, KC_D)
