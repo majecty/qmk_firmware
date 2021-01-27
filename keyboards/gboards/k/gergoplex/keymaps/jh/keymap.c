@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |SHFT/Z|  X  |  C  |  V  |  B  |      |  N  |  M  |  <  |  >  | SHFT/? |
  * `------+-----+-----+------+----'		   `--------------------------------'
  *  .-------------------------.           .-----------------.
- *  |ESC/META|ENT/ALT|SPC(SYM)|           |SPC(NUM)|BSPC|TAB|
+ *  |ESC/META|ENT/ALT|SPC(SYM)|           |SPC(NUM)|ALT |TAB|
  *  '-------------------------'           '-----------------'
  */
 [BASE] = LAYOUT_gergoplex(
