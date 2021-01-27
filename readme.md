@@ -8,6 +8,7 @@ seperate from qmk/master. If your board is already in qmk/master, use that repo 
 All keyboards are under keyboards/gboards/k and can be built and flashed with the following command
 
 `make gboards/k/keyboardname:default:dfu`
+`make gboards/k/gergoplex:jh:dfu`
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
 [![Build Status](https://travis-ci.org/qmk/qmk_firmware.svg?branch=master)](https://travis-ci.org/qmk/qmk_firmware)
