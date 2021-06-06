@@ -26,6 +26,7 @@ enum layers {
 
     MOUSE,
     ASETNIOP,
+    GAME,
 };
 
 enum custom_keycodes {
@@ -124,9 +125,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 */
 [BASE] = LAYOUT_ergodox_pretty(
   KC_EQUAL,      KC_1,         KC_2,         KC_3,      KC_4,      KC_5,         KC_6,                          LCAG_T(KC_5),KC_6,          KC_7,      KC_8,     KC_9,        KC_0,            KC_MINUS,
-  KC_TAB,        KC_Q,         KC_W,         KC_E,      KC_R,      KC_T,         LCTL(KC_LALT),                 KC_LEAD,     KC_Y,          KC_U,      KC_I,     KC_O,        KC_P,            LT(5,KC_BSLASH),
-  TG(ASETNIOP),  CTL_T(KC_A),  LALT_T(KC_S), LT(1,KC_D),LT(2,KC_F),LT(4,KC_G),                                  KC_H,        LT(5,KC_J),    KC_K,   LALT_T(KC_L),CTL_T(KC_SCOLON),GUI_T(KC_QUOTE),
-  OSM(MOD_RSFT), CTL_T(KC_Z),  KC_X,         KC_C,      KC_V,      LT(3,KC_B),   KC_GRAVE,                      KC_BSLASH,   LT(4,KC_N),    KC_M,      KC_COMMA, KC_DOT,      KC_SLASH,        OSM(MOD_RSFT),
+  KC_TAB,        KC_Q,         KC_W,         KC_E,      KC_R,      KC_T,         LCTL(KC_LALT),    KC_LEAD,     KC_Y,          KC_U,      KC_I,     KC_O,        KC_P,            LT(5,KC_BSLASH),
+  TG(ASETNIOP),  CTL_T(KC_A),  LALT_T(KC_S), LT(1,KC_D),LT(2,KC_F),LT(4,KC_G),                                  KC_H,        LT(5,KC_J),  KC_K,   LALT_T(KC_L),CTL_T(KC_SCOLON),GUI_T(KC_QUOTE),
+  OSM(MOD_RSFT), CTL_T(KC_Z),  KC_X,         KC_C,      KC_V,      LT(3,KC_B),   TG(GAME),         KC_BSLASH,   LT(4,KC_N),    KC_M,      KC_COMMA, KC_DOT,      KC_SLASH,        OSM(MOD_RSFT),
   OSM(MOD_LGUI), OSM(MOD_LCTL),OSM(MOD_LALT),KC_LEFT,   OSL(MOUSE),                                                                    GUI_T(KC_LANG1),KC_DOWN,  KC_LBRACKET, KC_RBRACKET,     OSM(MOD_LGUI),
                                                                                  KC_HOME,     KC_END,   KC_LEFT,KC_RIGHT,
                                                                                               KC_PGUP,  KC_UP,
@@ -198,6 +199,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                    _______,       _______, _______, _______,
                                                                   _______, _______,
                                      SFT_T(KC_SPC),GUI_T(KC_DEL), _______, _______, _______,SFT_T(KC_ENT)
+),
+[GAME] = LAYOUT_ergodox_pretty(
+  // left hand
+  KC_EQL,          KC_1,        KC_2,          KC_3,    KC_4,    KC_5,    KC_LEFT,              KC_RGHT,      KC_6,    KC_7,    KC_8,    KC_9,              KC_0,           KC_MINS,
+  KC_DEL,          KC_Q,        KC_W,          KC_E,    KC_R,    KC_T,    TG(SYMB),             TG(SYMB),     KC_Y,    KC_U,    KC_I,    KC_O,              KC_P,           KC_BSLS,
+  KC_BSPC,         KC_A,        KC_S,          KC_D,    KC_F,    KC_G,                                        KC_H,    KC_J,    KC_K,    KC_L,              KC_SCLN,        KC_QUOT,
+  KC_LSFT,         KC_Z,        KC_X,          KC_C,    KC_V,    KC_B,    _______,              MEH_T(KC_NO), KC_N,    KC_M,    KC_COMM, KC_DOT,            KC_SLSH,        KC_RSFT,
+  KC_GRV,          KC_QUOT,     LALT(KC_LSFT), KC_LEFT, KC_RGHT,                                              KC_UP,   KC_DOWN, KC_LBRC, KC_RBRC, TT(SYMB),
+                                                                 KC_LCTL, KC_LGUI,                 KC_LALT,    KC_ESC,
+                                                                          KC_HOME,                 KC_PGUP,
+                                                         KC_SPC, KC_BSPC, KC_END,                  KC_PGDN, KC_TAB, KC_ENT
 ),
 };
 
