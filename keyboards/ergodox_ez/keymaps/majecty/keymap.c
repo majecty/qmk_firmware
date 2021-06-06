@@ -420,24 +420,28 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         #endif
         break;
       case 1:
+      case 8:
         ergodox_right_led_1_on();
         #ifdef RGBLIGHT_COLOR_LAYER_1
           rgblight_setrgb(RGBLIGHT_COLOR_LAYER_1);
         #endif
         break;
       case 2:
+      case 9:
         ergodox_right_led_2_on();
         #ifdef RGBLIGHT_COLOR_LAYER_2
           rgblight_setrgb(RGBLIGHT_COLOR_LAYER_2);
         #endif
         break;
       case 3:
+      case 10:
         ergodox_right_led_3_on();
         #ifdef RGBLIGHT_COLOR_LAYER_3
           rgblight_setrgb(RGBLIGHT_COLOR_LAYER_3);
         #endif
         break;
       case 4:
+      case 11:
         ergodox_right_led_1_on();
         ergodox_right_led_2_on();
         #ifdef RGBLIGHT_COLOR_LAYER_4
@@ -445,6 +449,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         #endif
         break;
       case 5:
+      case 12:
         ergodox_right_led_1_on();
         ergodox_right_led_3_on();
         #ifdef RGBLIGHT_COLOR_LAYER_5
@@ -452,6 +457,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         #endif
         break;
       case 6:
+      case 13:
         ergodox_right_led_2_on();
         ergodox_right_led_3_on();
         #ifdef RGBLIGHT_COLOR_LAYER_6
@@ -459,6 +465,8 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         #endif
         break;
       case 7:
+      case 14:
+      case 15:
         ergodox_right_led_1_on();
         ergodox_right_led_2_on();
         ergodox_right_led_3_on();
