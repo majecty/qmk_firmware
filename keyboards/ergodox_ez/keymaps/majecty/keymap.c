@@ -125,7 +125,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_ergodox_pretty(
   KC_EQUAL,      KC_1,         KC_2,         KC_3,      KC_4,      KC_5,         KC_6,                          LCAG_T(KC_5),KC_6,          KC_7,      KC_8,     KC_9,        KC_0,            KC_MINUS,
   KC_TAB,        KC_Q,         KC_W,         KC_E,      KC_R,      KC_T,         LCTL(KC_LALT),                 KC_LEAD,     KC_Y,          KC_U,      KC_I,     KC_O,        KC_P,            LT(5,KC_BSLASH),
-  TG(ASETNIOP),  CTL_T(KC_A),  LALT_T(KC_S), LT(1,KC_D),LT(2,KC_F),KC_G,                                                     KC_H,          LT(5,KC_J),KC_K,     LALT_T(KC_L),CTL_T(KC_SCOLON),GUI_T(KC_QUOTE),
+  TG(ASETNIOP),  CTL_T(KC_A),  LALT_T(KC_S), LT(1,KC_D),LT(2,KC_F),LT(4,KC_G),                                  KC_H,        LT(5,KC_J),    KC_K,   LALT_T(KC_L),CTL_T(KC_SCOLON),GUI_T(KC_QUOTE),
   OSM(MOD_RSFT), CTL_T(KC_Z),  KC_X,         KC_C,      KC_V,      LT(3,KC_B),   KC_GRAVE,                      KC_BSLASH,   LT(4,KC_N),    KC_M,      KC_COMMA, KC_DOT,      KC_SLASH,        OSM(MOD_RSFT),
   OSM(MOD_LGUI), OSM(MOD_LCTL),OSM(MOD_LALT),KC_LEFT,   OSL(MOUSE),                                                                    GUI_T(KC_LANG1),KC_DOWN,  KC_LBRACKET, KC_RBRACKET,     OSM(MOD_LGUI),
                                                                                  KC_HOME,     KC_END,   KC_LEFT,KC_RIGHT,
