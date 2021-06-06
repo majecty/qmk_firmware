@@ -2,7 +2,17 @@
 
 ## Flush
 
-Run `qmk flash`
+Follow the Setup document https://docs.qmk.fm/#/newbs_getting_started
+
+Run the below command:
+
+```
+
+make ergodox_ez:majecty:flash
+
+```
+
+## Prev README
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
 [![Build Status](https://travis-ci.org/qmk/qmk_firmware.svg?branch=master)](https://travis-ci.org/qmk/qmk_firmware)
