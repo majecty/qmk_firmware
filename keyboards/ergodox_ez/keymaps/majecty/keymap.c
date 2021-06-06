@@ -215,15 +215,40 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [LEFT_ONLY] = LAYOUT_ergodox_pretty(
   // left hand
   KC_EQL,          KC_1,        KC_2,          KC_3,    KC_4,    KC_5,    KC_LEFT,              KC_RGHT,      KC_6,    KC_7,    KC_8,    KC_9,              KC_0,           KC_MINS,
-  KC_DEL,          KC_Q,        KC_W,          KC_E,    KC_R,    KC_T,    _______,             TG(SYMB),     KC_Y,    KC_U,    KC_I,    KC_O,              KC_P,           KC_BSLS,
+  KC_DEL,          KC_Q,        KC_W,          KC_E,    KC_R,    KC_T,    _______,              TG(SYMB),     KC_Y,    KC_U,    KC_I,    KC_O,              KC_P,           KC_BSLS,
   KC_BSPC,         KC_A,        KC_S,          KC_D,    KC_F,    KC_G,                                        KC_H,    KC_J,    KC_K,    KC_L,              KC_SCLN,        KC_QUOT,
-  KC_LSFT,         KC_Z,        KC_X,          KC_C,    KC_V,    KC_B,    _______,              MEH_T(KC_NO), KC_N,    KC_M,    KC_COMM, KC_DOT,            KC_SLSH,        KC_RSFT,
+  KC_LSFT,         KC_Z,        KC_X,          KC_C,    KC_V,    KC_B,    OSM(MOD_LSFT),        MEH_T(KC_NO), KC_N,    KC_M,    KC_COMM, KC_DOT,            KC_SLSH,        KC_RSFT,
   KC_GRV,          KC_QUOT,     LALT(KC_LSFT), KC_LEFT, KC_RGHT,                                              KC_UP,   KC_DOWN, KC_LBRC, KC_RBRC, TT(SYMB),
-                                                                 KC_LCTL, OSM(MOD_LGUI),                 KC_LALT,    KC_ESC,
+                                                                 SH_OS, OSM(MOD_LGUI),                 KC_ESC,    KC_ESC,
                                                                           OSM(MOD_LALT),                 KC_PGUP,
                                                 OSM(MOD_HYPR),OSM(MOD_MEH), OSM(MOD_LCTL),                  KC_PGDN, KC_TAB, KC_ENT
 ),
 };
+
+#ifdef SWAP_HANDS_ENABLE
+__attribute__ ((weak))
+// swap-hands action needs a matrix to define the swap
+const keypos_t PROGMEM hand_swap_config[MATRIX_ROWS][MATRIX_COLS] = {
+    /* Left hand, matrix positions */
+    {{0,13}, {1,13}, {2,13}, {3,13}, {4,13}, {5,13}},
+    {{0,12}, {1,12}, {2,12}, {3,12}, {4,12}, {5,12}},
+    {{0,11}, {1,11}, {2,11}, {3,11}, {4,11}, {5,11}},
+    {{0,10}, {1,10}, {2,10}, {3,10}, {4,10}, {5,10}},
+    {{0,9}, {1,9}, {2,9}, {3,9}, {4,9}, {5,9}},
+    {{0,8}, {1,8}, {2,8}, {3,8}, {4,8}, {5,8}},
+    {{0,7}, {1,7}, {2,7}, {3,7}, {4,7}, {5,7}},
+    /* Right hand, matrix positions */
+    {{0,6}, {1,6}, {2,6}, {3,6}, {4,6}, {5,6}},
+    {{0,5}, {1,5}, {2,5}, {3,5}, {4,5}, {5,5}},
+    {{0,4}, {1,4}, {2,4}, {3,4}, {4,4}, {5,4}},
+    {{0,3}, {1,3}, {2,3}, {3,3}, {4,3}, {5,3}},
+    {{0,2}, {1,2}, {2,2}, {3,2}, {4,2}, {5,2}},
+    {{0,1}, {1,1}, {2,1}, {3,1}, {4,1}, {5,1}},
+    {{0,0}, {1,0}, {2,0}, {3,0}, {4,0}, {5,0}},
+};
+#endif
+
+
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (record->event.pressed) {
