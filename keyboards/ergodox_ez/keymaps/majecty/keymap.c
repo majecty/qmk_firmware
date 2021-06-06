@@ -182,7 +182,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [MOUSE] = LAYOUT_ergodox_pretty(
   _______, _______,    _______, _______, _______,_______, DM_RSTP,                   DM_RSTP,_______, _______, _______, _______, _______, RESET,
   _______, KC_WH_U,    KC_WH_L, KC_MS_U, KC_WH_R,_______, DM_REC1,                   DM_PLY1,_______, KC_VOLU, KC_VOLD, KC_MUTE, _______, _______,
-  _______, KC_WH_D,    KC_MS_L, KC_MS_D, KC_MS_R,_______,                                    _______, _______, KC_ACL2, _______, _______, KC_MPLY,
+  _______, KC_WH_D,    KC_MS_L, KC_MS_D, KC_MS_R,_______,                                    _______, _______, KC_ACL2, KC_ACL1, KC_ACL0, KC_MPLY,
   _______, KC_LCTL,    KC_LALT, KC_LGUI, KC_LSFT,_______, DM_REC2,                   DM_PLY2,_______, _______, _______, _______, _______, _______,
   _______, WEBUSB_PAIR,_______, _______, KC_BTN3,                                                     KC_BTN3, _______, _______, _______, _______,
                                                           _______, _______, _______, _______,
